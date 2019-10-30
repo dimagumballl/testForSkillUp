@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<title>
+			calculator
+		</title>
+	<style>
+		div
+		{
+			width:40px;
+			height:40px;
+			border:1px solid blue;
+			float:left;
+			padding:10;
+		}
+	</style>
+	
+	</head>
+	<body>
+		<form name="form">
+			<input type="text" name="ansver" readonly>
+			
+			</br>
+			</br>
+			<input type="text" name="first">
+			<input type="text" name="second">
+			</br>
+			</br>
+			<div onclick="plus()">+</div>
+			<div onclick="min()">-</div>
+			<div onclick="mult()">*</div>
+			<div onclick="dil()">/</div>
+		</form>
+		<script>
+			
+			function plus()
+			{
+				var a=+document.form.first.value;
+				var b=+document.form.second.value;
+				var c=a+b;
+				document.form.ansver.value=c;
+			}
+			function min()
+			{
+				var a=+document.form.first.value;
+				var b=+document.form.second.value;
+				var c=a-b;
+				document.form.ansver.value=c;
+			}
+			function mult()
+			{
+				var a=+document.form.first.value;
+				var b=+document.form.second.value;
+				var c=a*b;
+				document.form.ansver.value=c;
+			}
+			function dil()
+			{
+				var a=+document.form.first.value;
+				var b=+document.form.second.value;
+				var c=a/b;
+				document.form.ansver.value=c;
+			}
+		</script>
+	</body>
+</html>
